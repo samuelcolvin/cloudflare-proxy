@@ -3,7 +3,7 @@ addEventListener('fetch', event => event.respondWith(handle_request(event)))
 const description =
   "https://proxy.samuelcolvin.workers.dev will proxy a request to the URL specified by the 'upstream' GET parameter. " +
   'Request method, headers and body will be forwarded unchanged if possible. ' +
-  'This function will return immediate, but the proxied request will continue for as long as possible, this ' +
+  'This function will return immediately, but the proxied request will continue for as long as possible, this ' +
   'is useful when you want to fire a webhook to an endpoint which may take a long time to startup and respond.'
 
 async function handle_request(event) {
